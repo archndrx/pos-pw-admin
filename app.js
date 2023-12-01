@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const bodyParser = require('body-parser'); 
 
 // Inisialisasi Firebase Admin SDK dengan kredensial
-const serviceAccount = require('../pos_admin/point-of-sales-f4a2f-firebase-adminsdk-1b55z-eea9969512.json');
+const serviceAccount = require('./point-of-sales-f4a2f-firebase-adminsdk-1b55z-eea9969512.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
